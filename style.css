@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: cornsilk;
+}
+
+body {
+    background-color: #f9fafb;
+    font-family: 'Fondamento', cursive;
+    font: 102%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 10px;
+    width: 100%;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 420px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 30px 40px;
+    max-width: 450px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20pc;
+    position: relative;
+}
+
+.form-control label {
+    color: rgb(70, 62, 62);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid hsl(0, 0%, 94%);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control input:focus {
+    outline: 1px;
+    border-color: rgb(126, 125, 125);
+}
+
+.form-control.success input {
+    border-color: var(--success color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 10;
+    left: 10;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #2984c0;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 70%;
+}
